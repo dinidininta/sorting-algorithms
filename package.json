@@ -10,16 +10,16 @@
   },
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.7.2",
-    "@babel/node": "^7.7.0",
-    "@babel/plugin-transform-runtime": "^7.6.2",
-    "@babel/preset-env": "^7.7.1",
-    "@babel/runtime": "^7.7.2",
+    "@babel/core": "^7.12.10",
+    "@babel/node": "^7.12.10",
+    "@babel/plugin-transform-runtime": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/runtime": "^7.12.5",
     "eslint": "5.0.0",
     "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jest": "^22.21.0",
-    "husky": "^3.0.9",
+    "husky": "^3.1.0",
     "jest": "^24.9.0"
   },
   "husky": {
