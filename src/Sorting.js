@@ -1,4 +1,3 @@
-/* eslint-disable no-param-reassign */
 /**
  * Represent a Sorting algorithms collection
  */
