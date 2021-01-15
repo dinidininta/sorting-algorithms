@@ -1,4 +1,4 @@
-
+/* eslint-disable no-param-reassign */
 /**
  * Represent a Sorting algorithms collection
  */
@@ -7,16 +7,15 @@ export default class Sorting {
   static insertionSort(data) {
     const sortedData = data;
     let i = 1;
-    while (i < sortedData.length) {
-      const x = sortedData[i];
+    data.slice(1).forEach((datum) => {
       let j = i - 1;
-      while (j >= 0 && sortedData[j] > x) {
-        sortedData[j + 1] = sortedData[j];
+      while (j >= 0 && data[j] > datum) {
+        sortedData[j + 1] = data[j];
         j -= 1;
       }
-      sortedData[j + 1] = x;
+      sortedData[j + 1] = datum;
       i += 1;
-    }
+    });
     return sortedData;
   }
 }
