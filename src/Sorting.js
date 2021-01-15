@@ -4,16 +4,15 @@
 
 export default class Sorting {
   static insertionSort(data) {
-    const sortedData = data;
-    let i = 1;
+    const sortedData = [data[0]];
     data.slice(1).forEach((datum) => {
-      let j = i - 1;
-      while (j >= 0 && data[j] > datum) {
-        sortedData[j + 1] = data[j];
-        j -= 1;
-      }
-      sortedData[j + 1] = datum;
-      i += 1;
+      let i = data.indexOf(datum);
+      sortedData.forEach((temp) => {
+        if (temp > datum) {
+          i -= 1;
+        }
+      });
+      sortedData.splice(i, 0, datum);
     });
     return sortedData;
   }
