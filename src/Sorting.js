@@ -18,6 +18,7 @@ export default class Sorting {
     return sortedData;
   }
 
+  // tessssst
   static selectionSort(data) {
     const sortedData = [];
     const copyData = [...data];
